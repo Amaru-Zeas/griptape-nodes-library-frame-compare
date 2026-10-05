@@ -1,0 +1,48 @@
+{
+  "name": "Frame Compare",
+  "library_schema_version": "0.1.0",
+  "metadata": {
+    "author": "Griptape Community",
+    "description": "Plate and mask review with four-up, wipe, difference, focused views, and a shared frame timeline.",
+    "library_version": "0.3.0",
+    "engine_version": "0.79.0",
+    "tags": [
+      "Griptape",
+      "Video",
+      "Review",
+      "Compare"
+    ],
+    "dependencies": {
+      "pip_dependencies": []
+    }
+  },
+  "settings": [],
+  "categories": [
+    {
+      "FrameCompare": {
+        "color": "border-neutral-500",
+        "title": "Frame Compare",
+        "description": "Plate and mask review",
+        "icon": "LayoutGrid"
+      }
+    }
+  ],
+  "widgets": [
+    {
+      "name": "FrameCompareWidget",
+      "path": "FrameCompareWidget.js",
+      "description": "Interactive plate and mask review with synchronized seeking, live inputs, and frame controls."
+    }
+  ],
+  "nodes": [
+    {
+      "class_name": "FrameCompareNode",
+      "file_path": "frame_compare_node.py",
+      "metadata": {
+        "category": "FrameCompare",
+        "description": "Connect a plate and a mask. The viewer builds plate, mask, checker, and green, and steps one frame at a time.",
+        "display_name": "Frame Compare"
+      }
+    }
+  ]
+}
